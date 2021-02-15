@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import style from "./styles.module.css";
+import style from "./styles.css";
 
 function Launches() {
     return (
