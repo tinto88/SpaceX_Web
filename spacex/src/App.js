@@ -1,33 +1,33 @@
-import logo from './logo.svg';
-import './App.css';
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-  Link
-} from "react-router-dom";
+import logo from "./logo.svg";
+import "./App.css";
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 
-import Home from './pages/Home/Home.js';
-import Launches from './pages/Launches/Launches.js';
-import Rockets from './pages/Rockets/Rockets.js';
+import Home from "./pages/Home/Home.js";
+import Launches from "./pages/Launches/Launches.js";
+import Rockets from "./pages/Rockets/Rockets.js";
 
 function App() {
   return (
     <Router>
       <div>
-        <ul>
-          <li>
-            <Link to="/">Home</Link>
-          </li>
-          <li>
-            <Link to="/launches">Launches</Link>
-          </li>
-          <li>
-            <Link to="/rockets">Rockets</Link>
-          </li>
+        <ul className="navbar">
+          <div className="nav1">
+          <Link to="/">
+            SpaceX
+            </Link>
+          </div>
+          <div className="nav2">
+            <Link to="/">
+              <li>Home</li>
+            </Link>
+            <Link to="/rockets">
+              <li>Rockets</li>
+            </Link>
+            <Link to="/launches">
+              <li>Launches</li>
+            </Link>
+          </div>
         </ul>
-
-        <hr />
 
         <Switch>
           <Route exact path="/">
