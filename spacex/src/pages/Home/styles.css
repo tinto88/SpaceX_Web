@@ -1,0 +1,33 @@
+:root {
+  --color-1: #090a28;
+  --color-2: #fcb13e;
+  --color-3: #fc910d;
+  --color-3: #090a28;
+}
+.container {
+  /* margin-top: 100px; */
+}
+.container-1 {
+  /* padding-top: 100px; */
+  height: 100vh;
+  width: 100vw;
+  background-color: var(--color-1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container-2 {
+  height: 100vh;
+  width: 100vw;
+  background-color: yellow;
+}
+.container-3 {
+  height: 100vh;
+  width: 100vw;
+  background-color: green;
+}
+
+.title-text {
+  color: #fcb13e;
+  font-size: 500%;
+}

@@ -36,7 +36,9 @@ function Card(props) {
   return (
     <article className="card">
       <CardHeader image={"https://source.unsplash.com/user/erondu/600x400"} />
-      <CardBody title={props.title} text={props.text} firstFlight={props.firstFlight}/>
+      <CardBody title={props.title} 
+      // text={props.text}
+       firstFlight={props.firstFlight}/>
     </article>
   );
 }

@@ -13,7 +13,7 @@ function Rockets() {
   }, []);
 
   return (
-    <div style={{ backgroundColor: "#341cac" }}>
+    <div className="container" style={{ backgroundColor: "#341cac" }}>
       <h2>Rockets</h2>
       <div className="card-container">
         {rockets.map((rocket) => (

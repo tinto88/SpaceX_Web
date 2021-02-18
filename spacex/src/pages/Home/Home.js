@@ -12,18 +12,26 @@ function Home() {
     fetchInfo();
   }, []);
   return (
-    <>
+    <div className="container">
       {info.links && info.headquarters && (
         <>
-          <div>
-            <h2>Home</h2>
-            <h1>{info.name}</h1>
+          <div className="container-1">
+            {/* <h1>{info.name}</h1> */}
+            <h1 className="title-text">SPACEX</h1>
+          </div>
+          <div className="container-2">
             <h2>Founder : {info.founder}</h2>
             <h2>founded : {info.founded}</h2>
             <h2>summary : {info.summary}</h2>
             <h2>ceo cto : {info.ceo}</h2>
             <h2>coo : {info.coo}</h2>
             <h2>cto_propulsion : {info.cto_propulsion}</h2>
+          </div>
+          <div className="container-3">
+            <h2>Home</h2>
+            <h1>{info.name}</h1>
+          </div>
+          <div>
             <h2>valuation : {info.valuation}</h2>
             <h2>employees : {info.employees}</h2>
             <h2>vehicles : {info.vehicles}</h2>
@@ -45,7 +53,7 @@ function Home() {
           </div>
         </>
       )}
-    </>
+    </div>
   );
 }
 
