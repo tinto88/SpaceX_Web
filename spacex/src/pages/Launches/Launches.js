@@ -11,15 +11,15 @@ function Launches() {
     };
     fetchLaunches();
   }, []);
-    return (
-      <div className="container">
-        <h1>Launches</h1>
-        {launches.map((launch) => (
-          <h4>{launch.mission_name}</h4>
-        ))}
-        
-      </div>
-    );
-  }
+  return (
+    <div className="container">
+      <h1>Launches</h1>
 
-  export default Launches;
+      {launches.map((launch) => (
+        <h4>{launch.mission_name}</h4>
+      ))}
+    </div>
+  );
+}
+
+export default Launches;

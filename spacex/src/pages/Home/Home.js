@@ -1,6 +1,6 @@
 import React, { Component, useState, useEffect } from "react";
 import style from "./styles.css";
-
+import earthImg from "../../img/earthhorizon.png";
 function Home() {
   const [info, setInfo] = useState([]);
   useEffect(() => {
@@ -17,8 +17,12 @@ function Home() {
         <>
           <div className="container-1">
             {/* <h1>{info.name}</h1> */}
-            <h1 className="title-text">SPACEX</h1>
+            <h1 className="title-text">
+              SPACEX
+            </h1>
+            <h1>เอาโลกหรือจรวดเลือกเอาละกันอันนี้ทำเล่น</h1>
           </div>
+          <img className="img-earth" src={earthImg} />
           <div className="container-2">
             <h2>Founder : {info.founder}</h2>
             <h2>founded : {info.founded}</h2>

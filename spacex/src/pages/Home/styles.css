@@ -31,3 +31,12 @@
   color: #fcb13e;
   font-size: 500%;
 }
+
+.img-earth {
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  justify-self: center;
+  width: 100vw;
+  height: 50vh;
+}
