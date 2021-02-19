@@ -11,54 +11,75 @@ function Home() {
     };
     fetchInfo();
   }, []);
+  /*parallax()*/
   return (
     <div className="container">
       {info.links && info.headquarters && (
         <>
           <div className="container-1-home">
             {/* <h1>{info.name}</h1> */}
-            <h1 className="title-text">
+            <h1 className="title-text"
+            // style={{transform: `translateY(${offsetY * 0.5}px)`}}
+            >
               SPACEX
             </h1>
-            <h1>เอาโลกหรือจรวดเลือกเอาละกันอันนี้ทำเล่น</h1>
           </div>
           <img className="img-earth" src={earthImg} />
+
           <div className="container-2">
-            <h2>Founder : {info.founder}</h2>
-            <h2>founded : {info.founded}</h2>
-            <h2>summary : {info.summary}</h2>
-            <h2>ceo cto : {info.ceo}</h2>
-            <h2>coo : {info.coo}</h2>
-            <h2>cto_propulsion : {info.cto_propulsion}</h2>
+          <div className="items-cont2">
+              <h2>ceo cto : {info.ceo}</h2>
+              <h2>coo : {info.coo}</h2>
+              <h2>cto_propulsion : {info.cto_propulsion}</h2>
+            </div>
+            <div className="items-cont2 founder">
+              <h1>Founded by {info.founder}</h1>
+              <h2>In {info.founded}</h2>
+              <h2>{info.summary}</h2>
+            </div>
+            <div className="items-cont2">
+              <h1>SSPIM</h1>
+            </div>
           </div>
+
           <div className="container-3">
-            <h2>Home</h2>
-            <h1>{info.name}</h1>
-          </div>
-          <div>
-            <h2>valuation : {info.valuation}</h2>
-            <h2>employees : {info.employees}</h2>
-            <h2>vehicles : {info.vehicles}</h2>
-            <h2>launch_sites : {info.launch_sites}</h2>
-            <h2>test_sites : {info.test_sites}</h2>
             <div>
-              <h2>headquarters Adress : </h2>
-              <h3>address : {info.headquarters.address}</h3>
-              <h3>city : {info.headquarters.city}</h3>
-              <h3>state : {info.headquarters.state}</h3>
-            </div>
-            <div>
-              <h2>Contact : </h2>
-              <h3>website : {info.links.website}</h3>
-              <h3>flickr : {info.links.flickr}</h3>
-              <h3>twitter : {info.links.twitter}</h3>
-              <h3>elon_twitter : {info.links.elon_twitter}</h3>
+              <div className="number-info">
+                <h2 className="items-num-info">employees : {info.employees}</h2>
+                <h2 className="items-num-info">vehicles : {info.vehicles}</h2>
+                <h2 className="items-num-info">launch_sites : {info.launch_sites}</h2>
+                <h2 className="items-num-info">test_sites : {info.test_sites}</h2>
+              </div>
+              <div className="adress">
+                <h2>headquarters Adress : </h2>
+                <h3>address : {info.headquarters.address}</h3>
+                <h3>city : {info.headquarters.city}</h3>
+                <h3>state : {info.headquarters.state}</h3>
+              </div>
+              <div>
+                <h2>Contact : </h2>
+                <h3>website : {info.links.website}</h3>
+                <h3>flickr : {info.links.flickr}</h3>
+                <h3>twitter : {info.links.twitter}</h3>
+                <h3>elon_twitter : {info.links.elon_twitter}</h3>
+              </div>
             </div>
           </div>
+
         </>
       )}
     </div>
   );
 }
+/*function parallax(){
+  const [offsetY, setOffsetY] = useState(0);
+  const handleScroll = () => setOffsetY(window.pageYOffset);
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+} */
 
 export default Home;
