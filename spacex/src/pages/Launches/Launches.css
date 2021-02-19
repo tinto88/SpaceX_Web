@@ -16,8 +16,10 @@
   flex-direction: row;
   flex-wrap: wrap;
   width: 100vw;
+  max-width: 960px;
+  margin: 0 auto;
 
 }
 .luanch-item {
-  flex: 1 0 calc((100% / 3) - 20px);
+  flex: 1 0 calc((100% / 4) - 20px);
 }
