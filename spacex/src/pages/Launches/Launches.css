@@ -1,0 +1,23 @@
+.container {
+  /* margin-top: 100px; */
+}
+.container-1-luanch {
+  /* padding-top: 100px; */
+
+  background-color: var(--color-1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  /* color: aliceblue; */
+}
+.launch-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100vw;
+
+}
+.luanch-item {
+  flex: 1 0 calc((100% / 3) - 20px);
+}

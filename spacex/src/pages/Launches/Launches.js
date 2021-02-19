@@ -1,6 +1,6 @@
 import React, { Component, useState, useEffect } from "react";
-import "./styles.css";
-
+import "./Launches.css";
+import CardLuanch from "../../components/CardLuanch/CardLuanch";
 function Launches() {
   const [launches, setLaunches] = useState([]);
   useEffect(() => {
@@ -16,9 +16,16 @@ function Launches() {
       <div className="container-1-luanch">
         <h1>Launches</h1>
 
-        {launches.map((launch) => (
-          <h4>{launch.mission_name}</h4>
-        ))}
+        <div className="launch-list">
+          {launches.map((launch) => (
+            <CardLuanch
+            className="luanch-item"
+              title={launch.mission_name}
+              text={launch.details}
+              firstFlight={launch.flight_number}
+            />
+          ))}
+        </div>
       </div>
     </div>
   );

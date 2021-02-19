@@ -1,5 +1,5 @@
 import React, { Component, useState, useEffect } from "react";
-import "./styles.css";
+import "./Rockets.css";
 import Card from "../../components/Card/Card";
 function Rockets() {
   const [rockets, setRockets] = useState([]);
