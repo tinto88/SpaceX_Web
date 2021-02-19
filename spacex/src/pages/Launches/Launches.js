@@ -12,12 +12,14 @@ function Launches() {
     fetchLaunches();
   }, []);
   return (
-    <div className="container">
-      <h1>Launches</h1>
+    <div>
+      <div className="container-1-luanch">
+        <h1>Launches</h1>
 
-      {launches.map((launch) => (
-        <h4>{launch.mission_name}</h4>
-      ))}
+        {launches.map((launch) => (
+          <h4>{launch.mission_name}</h4>
+        ))}
+      </div>
     </div>
   );
 }

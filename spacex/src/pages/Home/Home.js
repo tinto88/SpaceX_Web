@@ -15,7 +15,7 @@ function Home() {
     <div className="container">
       {info.links && info.headquarters && (
         <>
-          <div className="container-1">
+          <div className="container-1-home">
             {/* <h1>{info.name}</h1> */}
             <h1 className="title-text">
               SPACEX

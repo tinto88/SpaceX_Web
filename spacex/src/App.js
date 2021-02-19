@@ -1,6 +1,12 @@
 import logo from "./logo.svg";
 import "./App.css";
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  NavLink,
+  Link,
+} from "react-router-dom";
 
 import Home from "./pages/Home/Home.js";
 import Launches from "./pages/Launches/Launches.js";
@@ -12,20 +18,38 @@ function App() {
       <div>
         <ul className="navbar">
           <div className="nav1">
-          <Link to="/">
-            SpaceX
-            </Link>
+            <Link to="/">SpaceX</Link>
           </div>
+
           <div className="nav2">
-            <Link to="/">
+            <NavLink
+              exact
+              to="/"
+              activeStyle={{
+                fontWeight: "bold",
+                color: "red",
+              }}
+            >
               <li>Home</li>
-            </Link>
-            <Link to="/rockets">
+            </NavLink>
+            <NavLink
+              to="/rockets"
+              activeStyle={{
+                fontWeight: "bold",
+                color: "red",
+              }}
+            >
               <li>Rockets</li>
-            </Link>
-            <Link to="/launches">
+            </NavLink>
+            <NavLink
+              to="/launches"
+              activeStyle={{
+                fontWeight: "bold",
+                color: "red",
+              }}
+            >
               <li>Launches</li>
-            </Link>
+            </NavLink>
           </div>
         </ul>
 
