@@ -8,10 +8,13 @@
   box-shadow: 10px 5px 40px 20px darken(#341cac, 5%);
   transition: 0.25s;
   height: 500px;
+  
 }
 .card:hover {
-  box-shadow: 10px 5px 40px 20px darken(#341cac, 10%);
+  /* box-shadow: 10px 5px 40px 20px darken(#942b2b, 10%); */
   cursor: pointer;
+  background-color: #341cac;
+  box-shadow: 0 2px 4px rgba(rgb(255, 254, 254), 0.2), 0 4px 8px rgba(rgb(255, 255, 255), 0.2);
 }
 .button-primary {
   transform: translate(10px, 0);
@@ -62,9 +65,9 @@
   font-size: 15px;
   transition: 0.25s;
 }
-.button-primary-i {
+/* .button-primary-i {
   padding-right: 4px;
-}
+} */
 
 /* .designer-link {
   color:#fff;

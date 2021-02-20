@@ -11,6 +11,7 @@ import {
 import Home from "./pages/Home/Home.js";
 import Launches from "./pages/Launches/Launches.js";
 import Rockets from "./pages/Rockets/Rockets.js";
+import RocketDetail from "./pages/RocketDetail/RocketDetail.js";
 
 function App() {
   return (
@@ -27,7 +28,7 @@ function App() {
               to="/"
               activeStyle={{
                 fontWeight: "bold",
-                color: "red",
+                color: "#ffaf01",
               }}
             >
               <li>Home</li>
@@ -36,7 +37,7 @@ function App() {
               to="/rockets"
               activeStyle={{
                 fontWeight: "bold",
-                color: "red",
+                color: "#ffaf01",
               }}
             >
               <li>Rockets</li>
@@ -45,7 +46,7 @@ function App() {
               to="/launches"
               activeStyle={{
                 fontWeight: "bold",
-                color: "red",
+                color: "#ffaf01",
               }}
             >
               <li>Launches</li>
@@ -60,8 +61,11 @@ function App() {
           <Route path="/launches">
             <Launches />
           </Route>
-          <Route path="/rockets">
+          <Route exact path="/rockets">
             <Rockets />
+          </Route>
+          <Route exact path="/rockets/detail/:rocketId">
+            <RocketDetail />
           </Route>
         </Switch>
       </div>

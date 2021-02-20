@@ -19,7 +19,7 @@ function Launches() {
         <div className="launch-list">
           {launches.map((launch) => (
             <CardLuanch
-            className="luanch-item"
+              className="luanch-item"
               title={launch.mission_name}
               text={launch.details}
               firstFlight={launch.flight_number}

@@ -1,3 +1,4 @@
+
 .navbar {
   /* background-color: gray; */
 
@@ -23,7 +24,7 @@
 .navbar:hover {
   transform: translateY(0);
   opacity: 1;
-  background-color: #black;
+  /* background-color: black; */
 }
 .nav1 {
   color: red;
@@ -50,12 +51,15 @@ a {
   color: #fff;
   cursor: default;
   text-decoration: none;
+  font-weight: bold;
 }
 a:hover {
-  color: #090a28;
+  color: #ffaf01;
+  
+  
 }
 li:hover {
-  background-color: #fc910d;
+  /* background-color: #fc910d; */
 }
 ul {
   list-style-type: none;
