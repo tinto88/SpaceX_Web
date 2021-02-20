@@ -23,47 +23,122 @@
   justify-content: center;
 
 }
-.container-2 {
-  display: flex;
-  color: white;
-  height: 100vh;
-  width: 100vw;
-  background-color: var(--color-1);
-}
 .title-text {
   color: #fcb13e;
   font-size: 500%;
   transform: translateY();
 }
-
-.img-earth {
+.bg-home{
+  width: 100%;
   position: absolute;
-  bottom: 0;
-  display: flex;
-  justify-self: center;
-  width: 100vw;
-  height: 50vh;
 }
+.container-quote{
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  background-color: black;
+  color: white;
+  font-size: 1.5em;
+}
+.quote{
+  width: 55%;
+  text-align: center;
+  position: absolute;
+  top: calc((100% / 2) - 8%);
+  left: calc((100% - 55%) / 2);
+
+}
+.container-2 {
+  color:black;
+  height: 100vh;
+  width: 100vw;
+  background-color:white;
+  display: flex;
+}
+.items-cont2{
+  width: calc(100% / 2);
+  display: flex;
+  justify-content: flex-end;
+}
+.founded{
+  width: 100%;
+  height: 80%;
+  padding: 6%;
+  align-self: center;
+}
+.elonmusk{
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
+}
+.img-elonmusk{
+  height: 100vh;
+  width: 100%;
+}
+
+.container-5{
+  color:black;
+  height: 100vh;
+  width: 100vw;
+  background-color:white;
+  display: flex;
+}
+.items-cont5{
+  width: calc(100% / 2);
+  display: flex;
+  justify-content: center;
+}
+.cont5-twoCl{
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
+}
+
 .container-3{
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+}
+.bg-cont3{
+  width: 100%;
+  height: calc(100vh / 2);
+}
+.bg-cont3-top{
+  width: 100%;
+  height: 100%;
+  background: #eeeeee;
+}
+.bg-cont3-bottom{
+  width: 100%;
+  height: 100%;
+  background: white;
+  display: flex;
+  align-items: center;
+}
+.card-board{
+  display: flex;
+  width: 100%;
+  align-items: center;
+  position: absolute;
+  top: 30%;
+  align-items: flex-start;
+
+}
+.text-cont3{
+  width: calc(100% / 3);
+  margin: 10px;
+  text-align: center;
+}
+.pic-board{
+  width: 50%;
+}
+.container-4{
   background-color: var(--color-1);
   color: white;
-  display: flex;
-  /* flex-direction: column; */
-  justify-content: center;
   width: 100vw;
-}
-.number-info{
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-.items-num-info{
-  border: 1px solid white;
-  border-radius: 10px;
-  padding: .5em;
-  width: 20%;
+  flex-direction: row;
 }
 .adress{
-  border: 1px solid white;
-  border-radius: 10px;
+  width: calc(100% / 2);
 }
