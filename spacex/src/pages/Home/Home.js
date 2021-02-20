@@ -17,14 +17,11 @@ function Home() {
       {info.links && info.headquarters && (
         <>
           <div className="container-1-home">
+          <img className="spacex-logo" src="https://cdn.discordapp.com/attachments/806905833853943840/812812422623789066/Asset_5.png"></img>
           <img src="https://www.nasa.gov/sites/default/files/thumbnails/image/spacexarabsat6a.jpg" className="bg-home"></img>
             {/* <h1>{info.name}</h1> */}
-            <h1 className="title-text"
-            // style={{transform: `translateY(${offsetY * 0.5}px)`}}
-            >
-              SPACEX
-            </h1>
           </div>
+            
 
           <div className="container-quote">
             <div className="quote">
@@ -75,17 +72,19 @@ function Home() {
                 <div className="text-cont3">
                     <img className="pic-board" src="https://cdn.discordapp.com/attachments/806905833853943840/812782300823027732/Asset_1.png"></img>
                     <h2>{info.ceo}</h2>
-                    <p>CEO/CTO</p>
+                    <p>Chief Executive Officer</p>
+                    <p>Chief Technology Officer</p>
                   </div>
                   <div className="text-cont3">
                     <img className="pic-board" src="https://cdn.discordapp.com/attachments/806905833853943840/812782606256439326/Asset_2.png"></img>
                     <h2>{info.coo}</h2>
-                    <p>COO</p>
+                    <p>Chief Operating Officer</p>
                   </div>
                   <div className="text-cont3">
                     <img className="pic-board" src="https://cdn.discordapp.com/attachments/806905833853943840/812782610228838420/Asset_3.png"></img>
                     <h2>{info.cto_propulsion}</h2>
-                    <p>CTO Propulsion</p>
+                    <p>Chief Technology Officer</p>
+                    <p>Propulsion</p>
                   </div>
               </div>
             </div>
@@ -94,17 +93,17 @@ function Home() {
 
           <div className="container-4">
               <div className="adress">
-                <h2>headquarters Adress : </h2>
-                <h3>address : {info.headquarters.address}</h3>
-                <h3>city : {info.headquarters.city}</h3>
-                <h3>state : {info.headquarters.state}</h3>
+                <h2>ADRESS</h2>
+                <h3>Road : {info.headquarters.address}</h3>
+                <h3>City : {info.headquarters.city}</h3>
+                <h3>State : {info.headquarters.state}</h3>
               </div>
               <div className="adress">
-                <h2>Contact : </h2>
-                <h3>website : {info.links.website}</h3>
-                <h3>flickr : {info.links.flickr}</h3>
-                <h3>twitter : {info.links.twitter}</h3>
-                <h3>elon_twitter : {info.links.elon_twitter}</h3>
+                <h2>CONTACT</h2>
+                <h3>Website : {info.links.website}</h3>
+                <h3>Flickr : {info.links.flickr}</h3>
+                <h3>Twitter : {info.links.twitter}</h3>
+                <h3>Elon_twitter : {info.links.elon_twitter}</h3>
               </div>
           </div>
 
