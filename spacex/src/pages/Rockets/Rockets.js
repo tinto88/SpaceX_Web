@@ -1,6 +1,8 @@
 import React, { Component, useState, useEffect } from "react";
 import "./Rockets.css";
 import Card from "../../components/Card/Card";
+import TestCard from "../../components/TestCard/TestCard";
+
 function Rockets() {
   const [rockets, setRockets] = useState([]);
   useEffect(() => {
@@ -13,16 +15,24 @@ function Rockets() {
   }, []);
 
   return (
-    <div className="container" style={{ backgroundColor: "#341cac" }}>
-      <h2>Rockets</h2>
-      <div className="card-container">
+    <>
+      <div className="container-rocket">
+        
+      </div>
+      <div className="container">
+        {/* <div className="card-container">
         {rockets.map((rocket) => (
           <>
             <Card title={rocket.rocket_name} text={rocket.description} firstFlight={rocket.first_flight}/>
           </>
         ))}
+      </div> */}
+
+        {rockets.map((rocket) => (
+          <TestCard rocket={rocket} key={rocket.rocket_id} />
+        ))}
       </div>
-    </div>
+    </>
   );
 }
 
