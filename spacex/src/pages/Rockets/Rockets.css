@@ -8,7 +8,21 @@
     flex-direction: row;
 }
 .container-rocket{
-    background-color: aqua;
+    background-color: black;
     width: 100%;
     height: 100vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.bg-cont-rockets{
+    position: absolute;
+    width: 100%;
+}
+.center-rockets{
+    font-size: 2.5em;
+    color: black;
+    text-shadow: 2px 2px 8px white;
+    position: absolute;
 }
