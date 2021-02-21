@@ -4,16 +4,16 @@ import { useParams } from "react-router-dom";
 
 function LaunchDetail() {
   const { launchId } = useParams();
-  const [rockets, setRockets] = useState([]);
+  const [launches, setLaunches] = useState([]);
   useEffect(() => {
-    const fetchRockets = async () => {
+    const fetchLaunches = async () => {
       const response = await fetch(
         `https://api.spacexdata.com/v3/launches/${launchId}`
       );
       const data = await response.json();
-      setRockets(data);
+      setLaunches(data);
     };
-    fetchRockets();
+    fetchLaunches();
   }, []);
 
   return (

@@ -18,8 +18,8 @@ function Launches() {
     2018: false,
     2019: false,
     2020: false,
-    "true": false,
-    "false": false,
+    true: false,
+    false: false,
     "Falcon 1": false,
     "Falcon 9": false,
     "Falcon Heavy": false,
@@ -32,8 +32,8 @@ function Launches() {
   const handleChangeLaunchSuccess = (e) => {
     setToggled({
       ...toggled,
-      "true": false,
-      "false": false,
+      true: false,
+      false: false,
       [e]: !toggled[e],
     });
     if (toggled[e] == true) {
@@ -103,6 +103,7 @@ function Launches() {
   }, [RocketName, launchSuccess, launchYear]);
   return (
     <div>
+      <div className="container-1-luanch-start">LAUNCH</div>
       <div className="container-1-luanch">
         <div className="buttom-luanch-list">
           <h1 className="filer-title">Year</h1>
@@ -285,7 +286,6 @@ function Launches() {
               title={launch.mission_name}
               text={launch.details}
               firstFlight={launch.flight_number}
-
             />
           ))}
         </div>
