@@ -13,28 +13,29 @@ function CardLuanchHeader(props) {
     </header>
   );
 }
-function Button() {
-  let { url } = useRouteMatch();
-  return (
-    <NavLink className="btnTest button-primary" to={`${url}/}`}>
-      Learn More
-    </NavLink>
-  );
-}
-function CardLuanchBody(props) {
-  return (
-    <div className="cardLuanch-body">
-      <p className="date">First Flight : {props.firstFlight}</p>
+// function Button() {
+//   let { url } = useRouteMatch();
+//   return (
+//     <NavLink className="btnTest button-primary" to={`${url}/detail/${props.rocket.rocket_id}`}>
+//       Learn More
+//     </NavLink>
+//   );
+// }
+// function CardLuanchBody(props) {
+//   return (
+//     <div className="cardLuanch-body">
+//       <p className="date">First Flight : {props.firstFlight}</p>
 
-      <h2 className="body-title">{props.title}</h2>
+//       <h2 className="body-title">{props.title}</h2>
 
-      <p className="body-content">{props.text}</p>
+//       <p className="body-content">{props.text}</p>
 
-      <Button />
-    </div>
-  );
-}
+//       <Button />
+//     </div>
+//   );
+// }
 function CardLuanch(props) {
+  let { url } = useRouteMatch();
   return (
     <article className="cardLuanch">
       
@@ -53,7 +54,10 @@ function CardLuanch(props) {
 
       {/* <p className="body-content">{props.text}</p> */}
 
-      <Button />
+      {/* <Button /> */}
+      <NavLink className="btnTest button-primary" to={`${url}/detail/${props.firstFlight}`}>
+      Learn More
+    </NavLink>
     </div>
     </article>
   );
