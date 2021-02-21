@@ -17,25 +17,40 @@ function Home() {
       {info.links && info.headquarters && (
         <>
           <div className="container-1-home">
-          <img className="spacex-logo" src="https://cdn.discordapp.com/attachments/806905833853943840/812812422623789066/Asset_5.png"></img>
-          <img src="https://www.nasa.gov/sites/default/files/thumbnails/image/spacexarabsat6a.jpg" className="bg-home"></img>
+            <img
+              className="spacex-logo"
+              src="https://cdn.discordapp.com/attachments/806905833853943840/812812422623789066/Asset_5.png"
+            ></img>
+            <img
+              src="https://www.nasa.gov/sites/default/files/thumbnails/image/spacexarabsat6a.jpg"
+              className="bg-home"
+            ></img>
             {/* <h1>{info.name}</h1> */}
           </div>
-            
 
           <div className="container-quote">
             <div className="container-quote-content">
               <div className="quote">
                 <div className="open-symbol-quote">
-                  <img className="icon-quote" src="https://cdn.discordapp.com/attachments/806905833853943840/813111494190825512/quote.png"></img>
+                  <img
+                    className="icon-quote"
+                    src="https://cdn.discordapp.com/attachments/806905833853943840/813111494190825512/quote.png"
+                  ></img>
                 </div>
                 <div>
-                  <p> What I’m trying to do is to make a significant difference in space 
-                    flight and help make space flight accessible to almost anyone. </p>
+                  <p>
+                    {" "}
+                    What I’m trying to do is to make a significant difference in
+                    space flight and help make space flight accessible to almost
+                    anyone.{" "}
+                  </p>
                   <p className="name-quote">- Elon Musk -</p>
                 </div>
                 <div className="close-symbol-quote">
-                  <img className="icon-quote" src="https://cdn.discordapp.com/attachments/806905833853943840/813111485071884308/quote_1.png"></img>
+                  <img
+                    className="icon-quote"
+                    src="https://cdn.discordapp.com/attachments/806905833853943840/813111485071884308/quote_1.png"
+                  ></img>
                 </div>
               </div>
             </div>
@@ -44,14 +59,17 @@ function Home() {
           <div className="container-2">
             <div className="items-cont2">
               <div className="founded-1">
-              <h1>Founded by {info.founder}</h1>
-              <h3>In {info.founded}</h3>
-              <h3>{info.summary}</h3>
+                <h1>Founded by {info.founder}</h1>
+                <h3>In {info.founded}</h3>
+                <h3>{info.summary}</h3>
               </div>
             </div>
             <div className="items-cont2">
               <div className="elonmusk">
-                <img className="img-elonmusk" src="https://i.pinimg.com/564x/12/31/30/12313078f9e0814d5c03dfb96fef890e.jpg"></img>
+                <img
+                  className="img-elonmusk"
+                  src="https://i.pinimg.com/564x/12/31/30/12313078f9e0814d5c03dfb96fef890e.jpg"
+                ></img>
               </div>
             </div>
           </div>
@@ -59,29 +77,32 @@ function Home() {
           <div className="container-5">
             <div className="items-cont5">
               <div className="cont5-twoCl">
-                <img className="img-elonmusk" src="https://pbs.twimg.com/media/Dkl9gkUU8AEmNLb.jpg"></img>
+                <img
+                  className="img-elonmusk"
+                  src="https://pbs.twimg.com/media/Dkl9gkUU8AEmNLb.jpg"
+                ></img>
               </div>
             </div>
             <div className="items-cont5">
               <div className="founded-2">
                 <div className="detail-founded-2">
-                <h1>{info.employees}</h1>
-                <h3> EMPLOYEES </h3>
+                  <h1>{info.employees}</h1>
+                  <h3> EMPLOYEES </h3>
                 </div>
                 <div className="bar-content"></div>
                 <div className="detail-founded-2">
-                <h1>{info.vehicles}</h1>
-                <h3> VEHICLES </h3>
+                  <h1>{info.vehicles}</h1>
+                  <h3> VEHICLES </h3>
                 </div>
                 <div className="bar-content"></div>
                 <div className="detail-founded-2">
-                <h1>{info.launch_sites}</h1>
-                <h3> LAUNCH SITES </h3>
+                  <h1>{info.launch_sites}</h1>
+                  <h3> LAUNCH SITES </h3>
                 </div>
                 <div className="bar-content"></div>
                 <div className="detail-founded-2">
-                <h1>{info.test_sites}</h1>
-                <h3> TEST SITES </h3>
+                  <h1>{info.test_sites}</h1>
+                  <h3> TEST SITES </h3>
                 </div>
               </div>
             </div>
@@ -92,52 +113,70 @@ function Home() {
               <div className="bg-cont3-top"></div>
             </div>
             <div className="bg-cont3">
-              <div className="bg-cont3-bottom">
-            </div>
+              <div className="bg-cont3-bottom"></div>
               <div className="card-board">
                 <div className="text-cont3">
-                    <img className="pic-board" src="https://cdn.discordapp.com/attachments/806905833853943840/812782300823027732/Asset_1.png"></img>
-                    <h2>{info.ceo}</h2>
-                    <p>Chief Executive Officer</p>
-                    <p>Chief Technology Officer</p>
-                  </div>
-                  <div className="text-cont3">
-                    <img className="pic-board" src="https://cdn.discordapp.com/attachments/806905833853943840/812782606256439326/Asset_2.png"></img>
-                    <h2>{info.coo}</h2>
-                    <p>Chief Operating Officer</p>
-                  </div>
-                  <div className="text-cont3">
-                    <img className="pic-board" src="https://cdn.discordapp.com/attachments/806905833853943840/812782610228838420/Asset_3.png"></img>
-                    <h2>{info.cto_propulsion}</h2>
-                    <p>Chief Technology Officer</p>
-                    <p>Propulsion</p>
-                  </div>
+                  <img
+                    className="pic-board"
+                    src="https://cdn.discordapp.com/attachments/806905833853943840/812782300823027732/Asset_1.png"
+                  ></img>
+                  <h2>{info.ceo}</h2>
+                  <p>Chief Executive Officer</p>
+                  <p>Chief Technology Officer</p>
+                </div>
+                <div className="text-cont3">
+                  <img
+                    className="pic-board"
+                    src="https://cdn.discordapp.com/attachments/806905833853943840/812782606256439326/Asset_2.png"
+                  ></img>
+                  <h2>{info.coo}</h2>
+                  <p>Chief Operating Officer</p>
+                </div>
+                <div className="text-cont3">
+                  <img
+                    className="pic-board"
+                    src="https://cdn.discordapp.com/attachments/806905833853943840/812782610228838420/Asset_3.png"
+                  ></img>
+                  <h2>{info.cto_propulsion}</h2>
+                  <p>Chief Technology Officer</p>
+                  <p>Propulsion</p>
+                </div>
               </div>
             </div>
           </div>
-
 
           <div className="container-4">
             <div className="detail-cont4">
               <div className="adress">
                 <div className="icon">
                   <a href={info.links.website}>
-                    <img  className="icon-social" src="https://cdn.discordapp.com/attachments/806905833853943840/813134751917539360/globe.png"></img >
+                    <img
+                      className="icon-social"
+                      src="https://cdn.discordapp.com/attachments/806905833853943840/813134751917539360/globe.png"
+                    ></img>
                   </a>
                   <a href={info.links.flickr}>
-                    <img  className="icon-social" src="https://cdn.discordapp.com/attachments/806905833853943840/813134748272295977/flickr-logo.png"></img>
+                    <img
+                      className="icon-social"
+                      src="https://cdn.discordapp.com/attachments/806905833853943840/813134748272295977/flickr-logo.png"
+                    ></img>
                   </a>
                   <a href={info.links.twitter}>
-                    <img className="icon-social" src="https://cdn.discordapp.com/attachments/806905833853943840/813134745713377330/twitter.png"></img>
+                    <img
+                      className="icon-social"
+                      src="https://cdn.discordapp.com/attachments/806905833853943840/813134745713377330/twitter.png"
+                    ></img>
                   </a>
                 </div>
               </div>
               <div className="adress-text">
-                <p>Adress : {info.headquarters.address}, {info.headquarters.city}, {info.headquarters.state}</p>
+                <p>
+                  Adress : {info.headquarters.address}, {info.headquarters.city}
+                  , {info.headquarters.state}
+                </p>
               </div>
             </div>
           </div>
-
         </>
       )}
     </div>
