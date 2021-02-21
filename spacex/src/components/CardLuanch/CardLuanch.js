@@ -44,9 +44,9 @@ function CardLuanch(props) {
         firstFlight={props.firstFlight}
       /> */}
       <div className="cardLuanch-body">
-      <CardLuanchHeader
+      {/* <CardLuanchHeader
         image={"https://source.unsplash.com/user/erondu/600x400"}
-      />
+      /> */}
       <p className="date">First Flight : {props.firstFlight}</p>
 
       <h2 className="body-title">{props.title}</h2>
