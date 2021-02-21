@@ -12,7 +12,7 @@ import Home from "./pages/Home/Home.js";
 import Launches from "./pages/Launches/Launches.js";
 import Rockets from "./pages/Rockets/Rockets.js";
 import RocketDetail from "./pages/RocketDetail/RocketDetail.js";
-
+import LaunchDetail from "./pages/LaunchDetail/LaunchDetail.js"
 function App() {
   return (
     <Router>
@@ -58,6 +58,9 @@ function App() {
           <Route exact path="/">
             <Home />
           </Route>
+          <Route exact path="/launches/detail/:launchId">
+            <LaunchDetail />
+          </Route>
           <Route path="/launches">
             <Launches />
           </Route>
@@ -67,6 +70,7 @@ function App() {
           <Route exact path="/rockets/detail/:rocketId">
             <RocketDetail />
           </Route>
+          
         </Switch>
       </div>
     </Router>

@@ -285,6 +285,7 @@ function Launches() {
               title={launch.mission_name}
               text={launch.details}
               firstFlight={launch.flight_number}
+
             />
           ))}
         </div>
