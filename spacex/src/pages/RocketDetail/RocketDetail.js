@@ -23,9 +23,7 @@ function RocketDetail() {
           {/* <h1 >RocketDetail</h1> */}
           <div className="container-r-detail-1">
             <div className="content-container1-detail">
-              <div className="rockets-name">
                 <h1>{rockets.rocket_name}</h1>
-              </div>
               <div className="content-engine">
                 <p>First Flight : {rockets.first_flight}</p>
                 <p>Country : {rockets.country}</p>

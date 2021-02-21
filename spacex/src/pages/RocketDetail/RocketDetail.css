@@ -14,11 +14,7 @@
   justify-content: center;
   flex-direction: column;
 }
-.content-container1-detail{
-}
-.rockets-name{
-  text-align: center;
-}
+
 .content-engine{
   margin-bottom: 3%;
   border: 1px white solid;
