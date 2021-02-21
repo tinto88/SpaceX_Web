@@ -118,19 +118,24 @@ function Home() {
 
 
           <div className="container-4">
+            <div className="detail-cont4">
               <div className="adress">
-                <h2>ADRESS</h2>
-                <h3>Road : {info.headquarters.address}</h3>
-                <h3>City : {info.headquarters.city}</h3>
-                <h3>State : {info.headquarters.state}</h3>
+                <div className="icon">
+                  <a href={info.links.website}>
+                    <img  className="icon-social" src="https://cdn.discordapp.com/attachments/806905833853943840/813134751917539360/globe.png"></img >
+                  </a>
+                  <a href={info.links.flickr}>
+                    <img  className="icon-social" src="https://cdn.discordapp.com/attachments/806905833853943840/813134748272295977/flickr-logo.png"></img>
+                  </a>
+                  <a href={info.links.twitter}>
+                    <img className="icon-social" src="https://cdn.discordapp.com/attachments/806905833853943840/813134745713377330/twitter.png"></img>
+                  </a>
+                </div>
               </div>
-              <div className="adress">
-                <h2>CONTACT</h2>
-                <h3>Website : {info.links.website}</h3>
-                <h3>Flickr : {info.links.flickr}</h3>
-                <h3>Twitter : {info.links.twitter}</h3>
-                <h3>Elon_twitter : {info.links.elon_twitter}</h3>
+              <div className="adress-text">
+                <p>Adress : {info.headquarters.address}, {info.headquarters.city}, {info.headquarters.state}</p>
               </div>
+            </div>
           </div>
 
         </>

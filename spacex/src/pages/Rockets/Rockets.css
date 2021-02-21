@@ -19,9 +19,10 @@
 .bg-cont-rockets{
     position: absolute;
     width: 100%;
+    opacity: 0.7;
 }
 .center-rockets{
     font-size: 2.5em;
-    color: black;
+    color: white;
     position: absolute;
 }
