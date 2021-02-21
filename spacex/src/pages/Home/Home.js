@@ -24,15 +24,26 @@ function Home() {
             
 
           <div className="container-quote">
-            <div className="quote">
-              <q>What I’m trying to do is to make a significant difference in space 
-                flight and help make space flight accessible to almost anyone.</q>
+            <div className="container-quote-content">
+              <div className="quote">
+                <div className="open-symbol-quote">
+                  <img className="icon-quote" src="https://cdn.discordapp.com/attachments/806905833853943840/813111494190825512/quote.png"></img>
+                </div>
+                <div>
+                  <p> What I’m trying to do is to make a significant difference in space 
+                    flight and help make space flight accessible to almost anyone. </p>
+                  <p className="name-quote">- Elon Musk -</p>
+                </div>
+                <div className="close-symbol-quote">
+                  <img className="icon-quote" src="https://cdn.discordapp.com/attachments/806905833853943840/813111485071884308/quote_1.png"></img>
+                </div>
+              </div>
             </div>
           </div>
 
           <div className="container-2">
             <div className="items-cont2">
-              <div className="founded">
+              <div className="founded-1">
               <h1>Founded by {info.founder}</h1>
               <h3>In {info.founded}</h3>
               <h3>{info.summary}</h3>
@@ -52,12 +63,27 @@ function Home() {
               </div>
             </div>
             <div className="items-cont5">
-              <div className="founded">
-                <h3>employees : {info.employees}</h3>
-                <h3>vehicles : {info.vehicles}</h3>
-                <h3>launch_sites : {info.launch_sites}</h3>
-                <h3>test_sites : {info.test_sites}</h3>
+              <div className="founded-2">
+                <div className="detail-founded-2">
+                <h1>{info.employees}</h1>
+                <h3> EMPLOYEES </h3>
                 </div>
+                <div className="bar-content"></div>
+                <div className="detail-founded-2">
+                <h1>{info.vehicles}</h1>
+                <h3> VEHICLES </h3>
+                </div>
+                <div className="bar-content"></div>
+                <div className="detail-founded-2">
+                <h1>{info.launch_sites}</h1>
+                <h3> LAUNCH SITES </h3>
+                </div>
+                <div className="bar-content"></div>
+                <div className="detail-founded-2">
+                <h1>{info.test_sites}</h1>
+                <h3> TEST SITES </h3>
+                </div>
+              </div>
             </div>
           </div>
 
