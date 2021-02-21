@@ -8,11 +8,14 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-direction: column;
+  flex-direction: row;
   /* color: aliceblue; */
+  height: 100vh;
+  overflow-y: hidden;
 }
 .launch-list {
   display: flex;
+
   flex-direction: row;
   flex-wrap: wrap;
   width: 100vw;
@@ -20,9 +23,84 @@
   margin: 0 auto;
   /* background-color: aqua; */
   padding-right: 25px;
-
-
+  justify-content: space-between;
+  overflow-y: scroll;
+  height: 80vh;
+  margin-top: 5%;
+  /* padding-bottom: 60px; */
 }
 .luanch-item {
   flex: 1 0 calc((100% / 3) - 20px);
+}
+.buttom-luanch-list {
+  /* background-color: blueviolet; */
+  width: 100vw;
+  flex: 2;
+  height: 50vh;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  /* align-items:flex-start; */
+  padding-left: 10%;
+  padding-right: 10%;
+}
+.buttom-luanch {
+  /* background-color: aliceblue; */
+  border: 3px solid white;
+  color: aliceblue;
+  border-top-left-radius: 40px;
+  border-bottom-left-radius: 40px;
+  border-top-right-radius: 40px;
+  border-bottom-right-radius: 40px;
+  width: auto;
+  height: 70px;
+  padding-left: 10px;
+  padding-right: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+}
+.buttom-luanch:hover {
+  background-color: aliceblue;
+  color: black;
+  transition: 0.55s;
+}
+.toggle-launch {
+  background-color: aliceblue;
+  color: black;
+  transition: 0.55s;
+}
+.buttom-luanch-success {
+  display: flex;
+  flex-direction: row;
+
+  justify-content: space-around;
+}
+.buttom-luanch-rockets {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  justify-content: space-around;
+}
+.buttom-luanch-year {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.year-item{
+  margin-right: 10px;
+  flex: 1 0 calc((100% / 7) - 20px);
+  margin: 5px;
+}
+.rocket-item{
+  margin-right: 10px;
+  margin: 5px;
+  flex: 1 0 calc((100% / 3) - 20px);
+}
+.filer-title{
+  color: aliceblue;
 }

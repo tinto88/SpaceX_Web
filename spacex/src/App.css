@@ -1,4 +1,3 @@
-
 .navbar {
   /* background-color: gray; */
 
@@ -38,10 +37,10 @@
 }
 li {
   width: 100px;
-  border-top-left-radius: 10px;
+  /* border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
   border-top-right-radius: 10px;
-  border-bottom-right-radius: 10px;
+  border-bottom-right-radius: 10px; */
   padding: 15px;
   margin: 5px;
   justify-content: center;
@@ -55,11 +54,10 @@ a {
 }
 a:hover {
   color: #ffaf01;
-  
-  
 }
 li:hover {
   /* background-color: #fc910d; */
+  /* border-bottom: #ffaf01; */
 }
 ul {
   list-style-type: none;

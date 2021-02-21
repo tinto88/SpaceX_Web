@@ -1,42 +1,43 @@
 :root {
   --c-blue: #341cac;
 }
-.card {
+.cardLuanch {
   width: 280px;
-  display: block;
-  margin: 60px auto;
+  /* display: block; */
+  margin: 10px auto;
   box-shadow: 10px 5px 40px 20px darken(#341cac, 5%);
   transition: 0.25s;
-  height: 500px;
-  
+  height: 280px;
+  background-color: red;
+  padding-bottom: 50px;
 }
-.card:hover {
+.cardLuanch:hover {
   /* box-shadow: 10px 5px 40px 20px darken(#942b2b, 10%); */
   cursor: pointer;
   background-color: #341cac;
-  box-shadow: 0 2px 4px rgba(rgb(255, 254, 254), 0.2), 0 4px 8px rgba(rgb(255, 255, 255), 0.2);
+  box-shadow: 0 0 11px rgba(33, 33, 33, 0.2);
 }
 .button-primary {
   transform: translate(10px, 0);
 }
 
-.card-header {
+.cardLuanch-header {
   height: 150px;
-  width: 100%;
-  padding: 15px;
-  width: 100%;
-  background-size: cover;
+  /* width: 100%; */
+  /* padding: 15px; */
+  /* background-size: cover; */
   color: #fff;
 }
 
-.card-header--title {
+.cardLuanch-header--title {
   text-transform: uppercase;
   margin: 0;
+  
 }
 
-.card-body {
-  padding: 15px;
-  background-color: #fff;
+.cardLuanch-body {
+  /* padding: 15px; */
+  /* background-color: rgb(238, 31, 31); */
   width: 100%;
 }
 
@@ -44,6 +45,7 @@
   font-size: 11px;
   font-weight: 600;
   /* color: grey; */
+  padding-left: 10%;
 }
 
 .body-content {
@@ -54,16 +56,21 @@
 }
 .body-title {
   color: black;
+  padding-left: 10%;
+  font-size: 120%;
+  margin-bottom: 10%;
 }
 
 .button-primary {
-  border: none;
+  /* border: none;
   box-shadow: none;
   font-family: inherit;
   background-color: transparent;
   color: var(--c-blue);
   font-size: 15px;
-  transition: 0.25s;
+  transition: 0.25s; */
+  margin-left: 10%;
+  justify-self: end;
 }
 /* .button-primary-i {
   padding-right: 4px;

@@ -1,4 +1,5 @@
 import React, { Component, useState, useEffect } from "react";
+import { NavLink, useRouteMatch } from "react-router-dom";
 import "./CardLuanch.css";
 
 function CardLuanchHeader(props) {
@@ -7,21 +8,22 @@ function CardLuanchHeader(props) {
     backgroundImage: "url(" + image + ")",
   };
   return (
-    <header style={style} id={image} className="card-header">
-      <h4 className="card-header--title">News</h4>
+    <header style={style} id={image} className="cardLuanch-header">
+      {/* <h4 className="cardLuanch-header--title">News</h4> */}
     </header>
   );
 }
 function Button() {
+  let { url } = useRouteMatch();
   return (
-    <button className="button button-primary">
-      <i className="fa fa-chevron-right"></i> Find out more
-    </button>
+    <NavLink className="btnTest button-primary" to={`${url}/}`}>
+      Learn More
+    </NavLink>
   );
 }
 function CardLuanchBody(props) {
   return (
-    <div className="card-body">
+    <div className="cardLuanch-body">
       <p className="date">First Flight : {props.firstFlight}</p>
 
       <h2 className="body-title">{props.title}</h2>
@@ -34,15 +36,25 @@ function CardLuanchBody(props) {
 }
 function CardLuanch(props) {
   return (
-    <article className="card">
-      <CardLuanchHeader
-        image={"https://source.unsplash.com/user/erondu/600x400"}
-      />
-      <CardLuanchBody
+    <article className="cardLuanch">
+      
+      {/* <CardLuanchBody
         title={props.title}
         text={props.text}
         firstFlight={props.firstFlight}
+      /> */}
+      <div className="cardLuanch-body">
+      <CardLuanchHeader
+        image={"https://source.unsplash.com/user/erondu/600x400"}
       />
+      <p className="date">First Flight : {props.firstFlight}</p>
+
+      <h2 className="body-title">{props.title}</h2>
+
+      {/* <p className="body-content">{props.text}</p> */}
+
+      <Button />
+    </div>
     </article>
   );
 }
