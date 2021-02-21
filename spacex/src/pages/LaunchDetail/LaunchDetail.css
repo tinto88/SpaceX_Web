@@ -33,6 +33,7 @@
   .img-l-detail{
       height: 100%;
       width: 100%;
+      object-fit: cover;
   }
   .back-button-launch{
     width: 15%;

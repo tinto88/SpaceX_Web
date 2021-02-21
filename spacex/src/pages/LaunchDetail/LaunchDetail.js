@@ -18,9 +18,9 @@ function LaunchDetail() {
 
   return (
     <>
-      {/* {true && ( */}
+      { launches.links && (
         <div className="container-l-detail">
-          
+
           <div className="container-l-detail-1">
             <div className="l-content-container1-detail">
               <div className="launch-name">
@@ -35,11 +35,13 @@ function LaunchDetail() {
             <div className="back-button-launch"><h2>BACK</h2></div>
           </div>
           <div className="container-l-detail-2">
-            {/* <img className="img-l-detail" src={rockets.flickr_images[0]} /> */}
+            {launches.links.flickr_images.length == 0
+              ? <><img className="img-l-detail" src={launches.links.mission_patch} /></> : <><img className="img-l-detail" src={launches.links.flickr_images[0]} /></>}
+            {/* {<img className="img-l-detail" src={launches.links.flickr_images[0]} />} */}
           </div>
           {/* <h1>{rockets.rocket_name}</h1> */}
         </div>
-      {/* )} */}
+      )}
     </>
   );
 }
