@@ -5,16 +5,17 @@
   width: 280px;
   /* display: block; */
   margin: 10px auto;
-  box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 0.19);
   transition: 0.25s;
   height: 280px;
-  background-color: gray;
+  background-color: white;
   padding-bottom: 50px;
 }
 .cardLuanch:hover {
   /* box-shadow: 10px 5px 40px 20px darken(#942b2b, 10%); */
   cursor: pointer;
-  background-color: #341cac;
+  background-color: black;
+  opacity: 0.6;
   box-shadow: 0 0 11px rgba(33, 33, 33, 0.2);
 }
 .button-primary {

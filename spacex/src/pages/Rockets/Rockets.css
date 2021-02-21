@@ -31,6 +31,7 @@
     width: 100vw;
 
 }
-.center-rockets-title{
-
+.center-rockets-title:hover{
+    transition: 0.5s;
+    transform: translate(20px, 0);
 }
