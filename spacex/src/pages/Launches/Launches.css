@@ -3,6 +3,16 @@
 }
 .container-1-luanch-start{
   height: 100vh;
+  background-image: url("https://spacenews.com/wp-content/uploads/2020/06/45715171884_624136120f_k.jpg");
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.name-launch{
+  color: white;
+  font-size: 2.5em;
+
 }
 .container-1-luanch {
   /* padding-top: 100px; */

@@ -1,10 +1,10 @@
-.container-r-detail {
+.container-l-detail {
     /* background-color: aquamarine; */
     height: 100vh;
     display: flex;
     /* flex-direction: column; */
   }
-  .container-r-detail-1 {
+  .container-l-detail-1 {
     color: white;
     background-color: black;
     height: 100vh;
@@ -14,28 +14,15 @@
     justify-content: center;
     flex-direction: column;
   }
-  .content-container1-detail{
+  .l-content-container1-detail{
+    width: 80%;
   }
-  .rockets-name{
-    text-align: center;
-  }
-  .content-engine{
+  .content-launch-1{
     margin-bottom: 3%;
     border: 1px white solid;
     border-radius: 10px; padding-left: 3%;
   }
-  .content-thrust{
-    display: flex;
-    justify-content: space-between;
-  }
-  .detail-content-thrust{
-    width: calc((100% - 20%) / 3);
-    border: 1px white solid;
-    border-radius: 10px;
-    text-align: center;
-    padding: 0px 3px;
-  }
-  .container-r-detail-2 {
+  .container-l-detail-2 {
     height: 100vh;
   
     
@@ -43,11 +30,11 @@
     /* display: flex;
     align-items: center; */
   }
-  .img-r-detail{
+  .img-l-detail{
       height: 100%;
       width: 100%;
   }
-  .back-button{
+  .back-button-launch{
     width: 15%;
     align-self: flex-start;
     justify-self: flex-end;
