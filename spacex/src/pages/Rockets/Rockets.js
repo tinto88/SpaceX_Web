@@ -20,7 +20,7 @@ function Rockets() {
         <img className="bg-cont-rockets" 
         src="https://images.unsplash.com/photo-1567416661576-659c4298a2c6?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1189&q=80"></img>
         <div className="center-rockets">
-        <h1>ROCKETS</h1>
+        <h1 className="center-rockets-title">ROCKETS</h1>
         </div>
       </div>
       <div className="container">

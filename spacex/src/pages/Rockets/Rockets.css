@@ -25,4 +25,12 @@
     font-size: 2.5em;
     color: white;
     position: absolute;
+
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+
+}
+.center-rockets-title{
+
 }
