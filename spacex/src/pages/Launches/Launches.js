@@ -290,7 +290,7 @@ function Launches() {
               text={launch.details}
               firstFlight={launch.flight_number}
               date={launch.launch_year}
-              success={launch.success}
+              success={launch.launch_success}
               rocket={launch.rocket.rocket_name}
             />
           ))}

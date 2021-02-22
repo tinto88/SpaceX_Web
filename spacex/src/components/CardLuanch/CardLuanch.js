@@ -50,8 +50,11 @@ function CardLuanch(props) {
       /> */}
       <p className="date">ID : {props.firstFlight}</p>
 
-      <h2 className="body-title">{props.title}</h2>
-      <h2 className="body-title">{props.date}</h2>
+      <h2 className="body-title">{props.title} - {props.date}</h2>
+      <h2 className="body-title">{props.rocket}</h2>
+      <h2 className="body-title">
+        {props.success == true ? <>Success</> : props.success == false ? <>Failed</> :"" }
+      </h2>
       {/* <p className="body-content">{props.text}</p> */}
 
       {/* <Button /> */}

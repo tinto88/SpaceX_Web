@@ -50,10 +50,10 @@
 }
 
 .body-content {
-  padding-bottom: 40px;
   font-size: 13px;
   line-height: 1.8;
   color: black;
+  padding-left: 10%;
 }
 .body-title {
   color: black;
@@ -61,7 +61,6 @@
   font-size: 120%;
   margin-bottom: 10%;
 }
-
 .button-primary {
   /* border: none;
   box-shadow: none;
@@ -72,6 +71,9 @@
   transition: 0.25s; */
   margin-left: 10%;
   justify-self: end;
+}
+.success-card{
+  font-size: 13px;;
 }
 /* .button-primary-i {
   padding-right: 4px;
