@@ -49,3 +49,8 @@
   align-self: flex-start;
   justify-self: flex-end;
 }
+.rocket-button-back{
+  font-size: 150%;
+  margin-left: 5%;
+  /* width: 100vw; */
+}
