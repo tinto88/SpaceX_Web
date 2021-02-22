@@ -22,6 +22,16 @@
     border: 1px white solid;
     border-radius: 10px; padding-left: 3%;
   }
+  .content-launch-success{
+    margin-bottom: 3%;
+    display: flex;
+    justify-content: space-between;
+  }
+  .success-detail{
+    width: calc((100% - 10%) / 2);
+    border: 1px white solid;
+    border-radius: 10px; padding-left: 3%;
+  }
   .container-l-detail-2 {
     height: 100vh;
   
@@ -40,3 +50,13 @@
     align-self: flex-start;
     justify-self: flex-end;
   }
+ .status-success{
+   background-color: #3ab745;
+   display: flex;
+   align-items: center;
+ }
+ .status-failed{
+   background-color: red;
+   display: flex;
+   align-items: center;
+ }

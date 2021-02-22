@@ -31,6 +31,16 @@ function LaunchDetail() {
                 <p>Launch Date Local : {launches.launch_date_local}</p>
                 <p>Details : {launches.details}</p>
               </div>
+              <div className="content-launch-success">
+                <div className={`success-detail ${launches.launch_success == true ? "status-success" : launches.launch_success == false ? "status-failed" : ""}`}>
+                  {/* <p>{launches.launch_success == true
+                  ? <div className={`success-detail ${launches.launch_success == true ? "status-success" : ""}`}>Success</div> : <>Failed</> }</p> */}
+                  {launches.launch_success == true ? <>Success</> : launches.launch_success == false ? <>Failed</> : ""}
+                </div>
+                <div className="success-detail">
+                  <p>Rocket</p>
+                </div>
+              </div>
             </div>
             <div className="back-button-launch"><h2>BACK</h2></div>
           </div>
