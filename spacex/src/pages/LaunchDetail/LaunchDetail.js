@@ -1,6 +1,6 @@
 import React, { Component, useState, useEffect, version } from "react";
 import "./LaunchDetail.css";
-import { useParams } from "react-router-dom";
+import { useParams, NavLink  } from "react-router-dom";
 
 function LaunchDetail() {
   const { launchId } = useParams();
@@ -42,7 +42,11 @@ function LaunchDetail() {
                 </div>
               </div>
             </div>
-            <div className="back-button-launch"><h2>BACK</h2></div>
+            <div className="back-button-launch">
+              <NavLink className="btnTest button-primary" to={"/launches"}>
+                Back
+              </NavLink>
+            </div>
           </div>
           <div className="container-l-detail-2">
             {launches.links.flickr_images.length == 0
