@@ -48,10 +48,10 @@ function CardLuanch(props) {
       {/* <CardLuanchHeader
         image={"https://source.unsplash.com/user/erondu/600x400"}
       /> */}
-      <p className="date">First Flight : {props.firstFlight}</p>
+      <p className="date">ID : {props.firstFlight}</p>
 
       <h2 className="body-title">{props.title}</h2>
-
+      <h2 className="body-title">{props.date}</h2>
       {/* <p className="body-content">{props.text}</p> */}
 
       {/* <Button /> */}

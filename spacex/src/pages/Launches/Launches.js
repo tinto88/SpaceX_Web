@@ -289,6 +289,9 @@ function Launches() {
               title={launch.mission_name}
               text={launch.details}
               firstFlight={launch.flight_number}
+              date={launch.launch_year}
+              success={launch.success}
+              rocket={launch.rocket.rocket_name}
             />
           ))}
         </div>
