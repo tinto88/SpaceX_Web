@@ -1,6 +1,6 @@
 import React, { Component, useState, useEffect, version } from "react";
 import "./LaunchDetail.css";
-import { useParams, NavLink  } from "react-router-dom";
+import { useParams, NavLink } from "react-router-dom";
 
 function LaunchDetail() {
   const { launchId } = useParams();
@@ -18,13 +18,14 @@ function LaunchDetail() {
 
   return (
     <>
-      { launches.links && (
+      {launches.links && (
         <div className="container-l-detail">
-
           <div className="container-l-detail-1">
             <div className="l-content-container1-detail">
               <div className="launch-name">
-                <h1>{launches.mission_name} - {launches.launch_year}</h1>
+                <h1>
+                  {launches.mission_name} - {launches.launch_year}
+                </h1>
               </div>
               <div className="content-launch-1">
                 <p>Launch Date UTC : {launches.launch_date_utc}</p>
@@ -32,25 +33,58 @@ function LaunchDetail() {
                 <p>Details : {launches.details}</p>
               </div>
               <div className="content-launch-success">
-                <div className={`success-detail ${launches.launch_success == true ? "status-success" : launches.launch_success == false ? "status-failed" : ""}`}>
+                <div
+                  className={`success-detail ${
+                    launches.launch_success == true
+                      ? "status-success"
+                      : launches.launch_success == false
+                      ? "status-failed"
+                      : ""
+                  }`}
+                >
                   {/* <p>{launches.launch_success == true
                   ? <div className={`success-detail ${launches.launch_success == true ? "status-success" : ""}`}>Success</div> : <>Failed</> }</p> */}
-                  {launches.launch_success == true ? <>Success</> : launches.launch_success == false ? <>Failed</> : ""}
+                  {launches.launch_success == true ? (
+                    <>Success</>
+                  ) : launches.launch_success == false ? (
+                    <>Failed</>
+                  ) : (
+                    ""
+                  )}
                 </div>
-                <div className="success-detail">
-                  <p>Rocket</p>
+                <div className="success-detail success-detail-rocket-button">
+                  {/* <p>Rocket</p> */}
+                  <NavLink to={`/rockets/detail/${launches.rocket.rocket_id}`} >
+                    {launches.rocket.rocket_name}
+                  </NavLink>
                 </div>
               </div>
             </div>
             <div className="back-button-launch">
-              <NavLink className="btnTest button-primary" to={"/launches"}>
+              <NavLink
+                className="btnTest button-primary botton-text-launch"
+                to={"/launches"}
+              >
                 Back
               </NavLink>
             </div>
           </div>
           <div className="container-l-detail-2">
-            {launches.links.flickr_images.length == 0
-              ? <><img className="img-l-detail" src={launches.links.mission_patch} /></> : <><img className="img-l-detail" src={launches.links.flickr_images[0]} /></>}
+            {launches.links.flickr_images.length == 0 ? (
+              <>
+                <img
+                  className="img-l-detail"
+                  src={launches.links.mission_patch}
+                />
+              </>
+            ) : (
+              <>
+                <img
+                  className="img-l-detail"
+                  src={launches.links.flickr_images[0]}
+                />
+              </>
+            )}
             {/* {<img className="img-l-detail" src={launches.links.flickr_images[0]} />} */}
           </div>
           {/* <h1>{rockets.rocket_name}</h1> */}

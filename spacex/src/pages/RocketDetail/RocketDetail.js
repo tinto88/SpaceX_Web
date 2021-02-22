@@ -51,12 +51,13 @@ function RocketDetail() {
                   <p>Thrust To Weight : {rockets.engines.thrust_to_weight}</p>
                 </div>
               </div>
+              <div className="back-button ">
+                <NavLink className="btnTest button-primary rocket-button-back" to={"/rockets"}>
+                  Back
+                </NavLink>
+              </div>
             </div>
-            <div className="back-button">
-              <NavLink className="btnTest button-primary" to={"/rockets"}>
-                Back
-              </NavLink>
-            </div>
+            
           </div>
           <div className="container-r-detail-2">
             <img className="img-r-detail" src={rockets.flickr_images[0]} />
