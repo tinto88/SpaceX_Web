@@ -50,10 +50,10 @@ function CardLuanch(props) {
       /> */}
       <p className="date">ID : {props.firstFlight}</p>
 
-      <h2 className="body-title">{props.title} - {props.date}</h2>
-      <h2 className="body-title">{props.rocket}</h2>
+      <h2 className="body-title">Launch Name : {props.title}{props.date}</h2>
+      <h2 className="body-title">Rocket Name : {props.rocket}</h2>
       <h2 className="body-title">
-        {props.success == true ? <>Success</> : props.success == false ? <>Failed</> :"" }
+        {props.success == true ? <p style={{color:"green"}}>Success</p> : props.success == false ? <p style={{color:"red"}}>Failed</p> :"" }
       </h2>
       {/* <p className="body-content">{props.text}</p> */}
 

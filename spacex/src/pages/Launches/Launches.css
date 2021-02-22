@@ -79,7 +79,7 @@
 .buttom-luanch:hover {
   background-color: var(--color-2);
   color: aliceblue;
-  transition: 0.55s;
+  transition: 0.25s;
   border-color: var(--color-2);
 }
 .toggle-launch {
