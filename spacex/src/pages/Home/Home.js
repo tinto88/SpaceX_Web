@@ -149,19 +149,19 @@ function Home() {
             <div className="detail-cont4">
               <div className="adress">
                 <div className="icon">
-                  <a href={info.links.website}>
+                  <a href={info.links.website} className="icon-button">
                     <img
                       className="icon-social"
                       src="https://cdn.discordapp.com/attachments/806905833853943840/813134751917539360/globe.png"
                     ></img>
                   </a>
-                  <a href={info.links.flickr}>
+                  <a href={info.links.flickr} className="icon-button">
                     <img
                       className="icon-social"
                       src="https://cdn.discordapp.com/attachments/806905833853943840/813134748272295977/flickr-logo.png"
                     ></img>
                   </a>
-                  <a href={info.links.twitter}>
+                  <a href={info.links.twitter} className="icon-button">
                     <img
                       className="icon-social"
                       src="https://cdn.discordapp.com/attachments/806905833853943840/813134745713377330/twitter.png"
@@ -171,8 +171,9 @@ function Home() {
               </div>
               <div className="adress-text">
                 <p>
-                  Adress : {info.headquarters.address}, {info.headquarters.city}
-                  , {info.headquarters.state}
+                  {/* Address : {info.headquarters.address}, {info.headquarters.city}
+                  , {info.headquarters.state} */}
+                  1 Rocket Road Hawthorne California, 90250 United States
                 </p>
               </div>
             </div>
